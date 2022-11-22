@@ -1,0 +1,123 @@
+<html>
+
+    <head> <!-- header idk how this works ignore it -->
+        <meta charset="utf-8">
+        <title>List of skew uniform polyhedra</title>  
+        <style>
+        body {
+            font-family: sans-serif;
+        }
+        a:link {
+          color: blue;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+        a:hover {
+          color: #0080FF;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- title -->
+        <h1 style="text-align:center;">Section 1: List of finite skewniform polyhedra</h1>
+
+        <hr> <!-- navigation bar -->
+
+        <p align="center"><a href="generate.html">Section 0: Generate Cases</a> . . . <a href="mu.html">Section 2: Infinite polyhedra</a></p>
+
+        <hr> <!-- acknowledgements -->
+
+        <p>This is an unfinished list of all known uniform polyhedra with skew faces. The style of this list and the names were inspired by Jonathan Bowers' <a href="http://polytope.net/hedrondude/polychora.htm">list of uniform polychora</a>, and the code for this + many ideas were stolen from <a href="https://ericbinnendyk.net/honeycombs.html">Eric's honeycomb website</a> because I have no idea how to make websites.</p>
+
+        <hr> <!-- updates -->
+
+        <!-- <p><b>Update</b>: -->
+        
+        <hr> <!-- definition -->
+
+        <h2 style="text-align:center;">What is a valid skew uniform?</h2>
+
+        <p>You guys know what a polyhedron is, right? Faces connectin? I'm sure you do. Just in case though, here's what a polyhedron must obey, stolen mostly from Eric:</p>
+        <ul>
+            <li>It is strictly connected (it is not a compound, and neither are elements, element-figures, or element-figures of elements)</li>
+            <li>It is dyadic (all ridge figures, ridge figures of faces, and edges have two vertices)</li>
+            <li>Two distinct elements of rank greater than 1 cannot share the same set of ridges (disallowing a property sometimes called coincidicity)</li>
+            <li>Two edges cannot have the same endpoints (this prevents digons from occurring).</li>
+            <li>It is monal, meaning no two vertices overlap (cases that violate this rule are called fissary. I'll still give entries for them if any show up cause they're cool, but they aint polyhedra)</li>
+            <li>The set of vertices is not dense; for each vertex V, there is a real number e > 0 such that there are no vertices within distance e of V.</li>
+        </ul>
+            
+        <p>In order for a polyhedron to be <b>uniform</b> (by my definition), it must have the additional properties:</p>
+        <ul>
+            <li>It is vertex transitive</li>
+            <li>Every face is a uniform polygon. This means that all faces must themselves be vertex transitive, and all edges must be of unit length.</li>
+        </ul>
+
+        <p>Some polyhedra may be "morphed", a process involving continuously deforming the positions of the vertices while remaining uniform throughout. A set of polyhedra for which any polyhedron may be morphed into any other is a "family". Polyhedra within a family are considered distinct cases if:</p>
+        <ul>
+            <li>They are in different "teepees". That is, the morphing that brings the two polyhedra together requires vertices to overlap at some point.</li>
+            <li>Any face lowers in dimension. ie: a skew square (3D) becoming a planar square (2D) would constitute a distinct case.</li>
+        </ul>
+
+        <p>Finally, in order for a polyhedron to not be placed in Section 0 and excluded in the main count, it must not be "generate" (having only planar faces). These cases will be halfheartedly listed in Section 0. A polyhedron will also be placed in Section 2 and excluded from the main count if it has an infinite number of vertices, because there's too many of those.</p>
+
+        <hr> <!-- categories!!! -->
+
+        <!-- template
+            <p><b><a href="example.html">Category NIL</a>: your mother</b> - doin your mom doin doin your mom</p>
+            <p><b>Category Z:</b> - something infinite lol</p>
+        -->
+
+        <h2 style="text-align:center;">Uniform polyhedron categories</h2>
+
+        <p><b>Category A: Squiggleprisms</b> - These are in the regiments of prisms of polygons with an even number of sides. They have the original base polygons, and 2 right wavy polygons. The square squiggleprism, squiggip, is in the cube regiment.</p>
+
+        <p><b>Category B: Antisquigglyprisms</b> - These are in the regiments of the antiprisms of polygons with a threeven number of sides. They have the original base polygons, an antiprismatic skew polygon wrapping all the way around, and three wavy polygons. The triangular antisquigglyprism, called the dihemihexahedron, or dhah, is in the oct regiment.</p>
+
+        <p><b>Category C: N-Squigglyprisms</b> - These are a tad difficult to understand. They are facetings of prisms of regular compound polygons which have a multiple of N+1 sides. They contain the original compound bases, and some arrangement of skew and wavy polygons darting between the compounds to complete everything. N > 2. The simplest case is the square trisquigglyprism, or squitriggip. These aren't very well explored.</p>
+
+        <p><b>Category D: Unexplainable Prismatics</b> - These polyhedra are prismatic polyhedra with no known simple explanation for obtaining them. These have not been fully searched, or even close. The hope is to eventually iron this out into a multitude of infinite categories.</p>
+
+
+        <p><b><a href="petrials.html">Category 1</a>: Petrials</b> - These are the 9 petrials of the 9 regular polyhedra in S0C1. These are themselves regular, though they have nonsensical duals. Their vertex figures are identical to those of the original polyhedron.</p>
+
+        <p><b><a href="truncates.html">Category 2</a>: Truncates</b> - These are the 10 truncates of Category 1 members. There are 7 truncates and 3 quasitruncates. Their vertex figures are still isosceles triangles.</p>
+
+        <p><b><a href="truncates.html">Category 3</a>: Skewed Quasiregulars</b> - These 15 polyhedra come in 5 regiments of three. Each regiment is obtained by "skewing" one of the original S0C3 quasiregular regiment leaders, in which you replace each face with an antiprismic skew face that goes through the whole shape. ie: replacing a triangle with a skew hexagon. Squares turn into compounds of 2 skew squares rather than skew octagons. The original hemifacets in the non-sidtid regiments get halved, turning hexagons into 2-triangle compounds, decagons into 2-pentagon compounds, and decagrams into 2-pentagram compounds. The sidtid regiment just also skews the inner pentagons, making decagrams.</p>
+
+        <p><b><a href="truncates.html">Category 4</a>: Quasiregular Truncations</b> - These polyhedra are created by truncating the Category 3 polyhedra and then doing your best to equalize the edge lengths. Truncating a regiment colonel will result in an omnitruncate-like object, and there will often be a valid truncate and quasitruncate. Truncating a (non-sidtid) non-colonel results in bowties, which must be squished down into edges before equalization, resulting in strange and unusual regiments.</p>
+
+        <p><b><a href="truncates.html">Category 5</a>: Skewed Trapeziverts</b> - These polyhedra are obtained by alternating the "large face" in a Section 0 truncate or trapezivert, like you do with the hemifacets in Category 3. This will, for example, turn tic's octagons into 2-square compounds, or gaddid's decagrams into 2-pentagram compounds. The polyhedron is then completed by sending across skew polygons in whatever fashion completes it, there'll always be one. These objects are alone in their regiments, and may be morphed. The skewed sratet is pesoho from Category 3. Notably, even semiuniform and degenerate trapeziverts and truncates may go through this process, making it tedious to enumerate. This category has not been fully searched.</p>
+
+        <p><b><a href="truncates.html">Category 6</a>: Ike/Gike Members</b> - These 6 polyhedra are pyritic or tetrahedral members of the ike and gike regiments. Each regiment has 3 new skewy members. One of the members in each regiment may be morphed. The alternation of tipoe from Category 2 is here.</p>
+
+        <p><b><a href="truncates.html">Category 7</a>: Unexplainable Cubics</b> - These polyhedra are cubic-symmetric polyhedra with no known simple explanation for obtaining them. These have not been fully searched, and there's 13 so far, in 5 regiments.</p>
+
+        <p><b><a href="truncates.html">Category 8</a>: Unexplainable Icosahedrals</b> - These polyhedra are icosahedral-symmetric polyhedra with no known simple explanation for obtaining them. These have not been fully searched, or even close.</p>
+
+        <hr> <!-- sheet link -->
+
+        <h2 style="text-align:center;">List of all known uniform polyhedra</h2>
+        <p><a href="https://docs.google.com/spreadsheets/d/1VrA41fAv8amjCrBxH618pWw-HBl03G8QwkVrdzmpXwI/edit#gid=1041273649">Here</a> is a spreadsheet of all known skewy uniform polyhedra. All of the Bowers-style acronyms are unofficial, bar some of the regulars.</p>
+
+        <hr> <!-- similar pages -->
+
+        <h2 style="text-align:center;">Other pages</h2>
+        <p>Here are other people's pages on polytopes.</p>
+        <p><b><a href="http://www.polytope.net/hedrondude/polychora.htm">Uniform Polychora and Other Four Dimensional Shapes</a></b> by Jonathan Bowers</p>
+        <p><b><a href="https://ericbinnendyk.github.io/website/honeycombs.html">List of uniform honeycombs</a></b> by Eric</p>
+        <p><b><a href="https://lllllllllwith10ls.github.io/website/hyperbolic/honeycombs.html">List of hyperbolic honeycombs</a></b> by lllllllllwith10ls</p>
+
+        <hr> <!-- other pages (unused) -->
+
+
+
+        <hr> <!-- image credits (unused) -->
+
+
+    </body>
+</html>
